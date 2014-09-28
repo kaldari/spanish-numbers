@@ -62,16 +62,20 @@ function pickNumber() {
 	<style>
 	body {
 		text-align: center;
-		margin: 2em;
-		font-size: 2em;
+		margin: 1em;
 	}
 	input {
-		font-size: inherit;
+		font-size: 7em;
+	}
+	.question {
+		font-size: 10em;
 	}
 	.win {
+		font-size: 6em;
 		color: green;
 	}
 	.lose {
+		font-size: 6em;
 		color: #cc0000;
 	}
 	</style>
@@ -87,9 +91,10 @@ function pickNumber() {
 			$number = pickNumber();
 		}
 	} else {
+		print '<p class="win">&nbsp;</p>';
 		$number = pickNumber();
 	}
-	print '<p>'.$number.'</p>';
+	print '<p class="question">'.$number.'</p>';
 ?>
 <p>
 <form id="quiz" action="index.php" method="post">
